@@ -36,3 +36,12 @@ focusInput.addEventListener("blur", function() {
     focusMessage.textContent = "Input field lost focus!";
     focusMessage.style.color = "#e53935";
 });
+
+const buttonContainer = document.getElementById("button-container");
+const clickedButtonDisplay = document.getElementById("clicked-button");
+
+buttonContainer.addEventListener("click", function(event) {
+    if (event.target && event.target.matches("button.random-button")) {
+        clickedButtonDisplay.textContent = event.target.textContent;
+    }
+});
