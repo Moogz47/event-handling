@@ -8,3 +8,10 @@ button.addEventListener("mouseover", function() {
 button.addEventListener("mouseout", function() {
     message.textContent = "Hover over the button to see a message change!";
 });
+
+const keyInput = document.getElementById("key-input");
+const keyPressedDisplay = document.getElementById("key-pressed");
+
+keyInput.addEventListener("keydown", function(event) {
+    keyPressedDisplay.textContent = event.key;
+});
