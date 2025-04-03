@@ -23,3 +23,16 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
     formMessage.style.display = "block";
 });
+
+const focusInput = document.getElementById("focus-input");
+const focusMessage = document.getElementById("focus-message");
+
+focusInput.addEventListener("focus", function() {
+    focusMessage.textContent = "Input field is focused!";
+    focusMessage.style.color = "#4caf50";
+});
+
+focusInput.addEventListener("blur", function() {
+    focusMessage.textContent = "Input field lost focus!";
+    focusMessage.style.color = "#e53935";
+});
