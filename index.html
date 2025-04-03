@@ -19,10 +19,20 @@
     </section>
 
     <section class="section" id="keyboard-events">
-        <h2>Keyboard Events</h2>
+        <h2>Keyboard Event</h2>
         <p>Press any key in the input field to see the latest key pressed!</p>
         <input type="text" id="key-input" placeholder="Type something...">
         <p>Latest Key Pressed: <span id="key-pressed">None</span></p>
+    </section>
+
+    <section class="section" id="form-events">
+        <h2>Form Event</h2>
+        <form id="simple-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="form-message" style="display: none; color: #4caf50;">Form submitted successfully!</p>
     </section>
 
     <script src="script.js"></script>

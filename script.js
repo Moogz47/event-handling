@@ -15,3 +15,11 @@ const keyPressedDisplay = document.getElementById("key-pressed");
 keyInput.addEventListener("keydown", function(event) {
     keyPressedDisplay.textContent = event.key;
 });
+
+const form = document.getElementById("simple-form");
+const formMessage = document.getElementById("form-message");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    formMessage.style.display = "block";
+});
